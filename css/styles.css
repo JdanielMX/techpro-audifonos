@@ -19,8 +19,23 @@ Principalmente se utiliza para definir variables CSS globales que pueden ser reu
     --fuenteSecundaria: 'Lato', sans-serif;
 }
 
+html{
+
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+}
+
+*,*::before,*::after{
+
+    box-sizing: inherit;
+
+}
+
 body{
 
     /* para utilizar la custon property se usa la funcion var */
     font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+    line-height: 1.5;
 }

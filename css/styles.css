@@ -1,0 +1,26 @@
+/* En CSS, :root es un selector pseudo-clase que representa el elemento raíz del documento,
+ que en HTML es siempre el <html>.
+
+🌱 ¿Para qué se usa :root?
+Principalmente se utiliza para definir variables CSS globales que pueden ser reutilizadas en todo el documento. Es como un contenedor central de configuraciones
+ */
+
+:root{
+
+    --primario: #1073BA;
+    --secundario: #00DA55;
+    --gris: #3b3b3b;
+    --blanco: #ffffff;
+    --negro: #1f1e1e;
+    --grisClaro: #e1e1e1;
+
+
+    --fuentePrincipal: 'Roboto', sans-serif;
+    --fuenteSecundaria: 'Lato', sans-serif;
+}
+
+body{
+
+    /* para utilizar la custon property se usa la funcion var */
+    font-family: var(--fuentePrincipal);
+}

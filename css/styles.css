@@ -176,6 +176,19 @@ img {
         line-height: 1;
 
     }
+
+    .imagen-header picture img{
+
+        transition: transform 0.3s ease;
+        
+    }
+
+    .imagen-header picture img:hover{
+
+        transform: translateX(2rem) rotate(5deg);
+        
+        
+    }
 }
 
 .precio-producto span {
@@ -411,6 +424,12 @@ img {
     background-position: top center;
     background-repeat: no-repeat;
     background-size: 100% 70rem;
+    margin-bottom: var(--separacion);
+}
+
+.newsletter h2{
+
+    font-size: 3rem;
 }
 
 @media (min-width: 768px) {
@@ -421,6 +440,11 @@ img {
         padding: 10rem 0;
         background-position: center, -21rem 0;
 
+    }
+
+    .newsletter h2{
+
+        font-size: 3.6rem;
     }
 }
 
@@ -457,6 +481,11 @@ img {
     }
 }
 
+/* .formulario{
+
+    display: flex;
+} */
+
 .formulario input[type="submit"] {
 
     width: 100%;
@@ -474,4 +503,25 @@ img {
     width: 100%;
     padding: 1.5rem;
  
+}
+
+
+/* footer */
+
+
+/* .footer{
+
+    padding: var(--separacion);
+} */
+
+.footer p{
+
+    text-align: center;
+    font-family: var(--fuenteSecundaria);
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: var(--primario);
+    padding: 3rem 0;
+
+
 }
